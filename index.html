@@ -22,10 +22,9 @@
         rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="70" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg p-3 fixed-top" data-bs-spy="scroll" data-bs-target="#navbarSupportedContent"
-        data-bs-offset="70" tabindex="0">
+    <nav id="navbar" class="navbar navbar-expand-lg p-3 fixed-top">
         <div class="container justify-content-center p-0">
             <a class="navbar-brand me-auto ms-5 fs-5 me-5 fw-bold text-white" href="#">DANIELS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,10 +35,10 @@
             <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a class="nav-link" id="home-tab" href="#home">Home</a>
+                        <a class="nav-link active" id="home-tab" ria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about-tab" href="#about">About</a>
+                        <a class="nav-link active" id="about-tab" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="services-tab" href="#services">Services</a>
@@ -62,8 +61,9 @@
     </nav>
 
 
+
     <!-- Header -->
-    <header id="home">
+    <header id="home" data-scroll-index="0">
         <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
             <div class="header-content  d-flex justify-content-center align-items-center flex-column">
                 <h1 class="text-light fw-bold display-2">Hello</h1>
@@ -699,7 +699,6 @@
             loop: true
         });
     </script>
-
 
 </body>
 
